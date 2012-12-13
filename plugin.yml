@@ -1,0 +1,14 @@
+name: OresomeDonor
+main: com.oresome.OresomeDonor.OresomeDonor
+version: 1.0
+commands:
+   donatorbroadcast:
+      description: Announce a new donator.
+      usage: /<command>
+      permission: oresomedonor.donatorbroadcast
+      permission-message: You don't have to use this command!
+   donatorplusbroadcast:
+      description: Announce a new donator.
+      usage: /<command>
+      permission: oresomedonor.donatorbroadcast
+      permission-message: You don't have to use this command!
