@@ -1,14 +1,14 @@
-name: OresomeDonor
-main: com.oresome.OresomeDonor.OresomeDonor
-version: 1.0
+name: BuycraftAnnouncer
+main: com.zachoz.BuycraftAnnouncer.BuycraftAnnouncer
+version: 2.0
 commands:
-   donatorbroadcast:
-      description: Announce a new donator.
+   donorbroadcast:
+      description: Announce a new purchase.
       usage: /<command>
-      permission: oresomedonor.donatorbroadcast
+      permission: buycraftannouncer.broadcast
       permission-message: You don't have to use this command!
-   donatorplusbroadcast:
-      description: Announce a new donator.
+   buycraftannouncer:
+      description: Base command..
       usage: /<command>
-      permission: oresomedonor.donatorbroadcast
+      permission: buycraftannouncer.command
       permission-message: You don't have to use this command!

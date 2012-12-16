@@ -1,0 +1,9 @@
+# BuycraftAnnouncer config.
+broadcast1:
+    prefix: '&6[Donation]'
+    usernamecolour: '&b'
+    message: '&2is now a Donator!'
+broadcast2:
+    prefix: '&6[Kit]'
+    usernamecolour: '&b'
+    message: '&2has purchased the diamond kit!'
