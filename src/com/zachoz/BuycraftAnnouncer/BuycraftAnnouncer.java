@@ -15,13 +15,13 @@ public class BuycraftAnnouncer extends JavaPlugin {
     public void onDisable() {
 
 	PluginDescriptionFile pdfFile = getDescription();
-	this.logger.info(pdfFile.getName() + "is now disabled");
+	this.logger.info(pdfFile.getName() + "is now disabled!");
     }
 
     public void onEnable() {
 
 	PluginDescriptionFile pdfFile = getDescription();
-	this.logger.info(pdfFile.getName() + " version " + pdfFile.getVersion() + "is now enabled");
+	this.logger.info(pdfFile.getName() + " version " + pdfFile.getVersion() + "is now enabled!");
 	this.saveDefaultConfig();
 	
     }
@@ -46,7 +46,7 @@ public class BuycraftAnnouncer extends JavaPlugin {
 		String usernamecolour = getConfig().getString(announcement + ".usernamecolour");
 		
 		if(getConfig().getString(args[0]) == null) {
-		    sender.sendMessage(RED + "The broadcast " + args[0] + " is not defined in the configuration!");
+		    sender.sendMessage(RED + "The broadcast " + args[0] + " is not defined in the config!");
 	    } else {
 		Bukkit.broadcastMessage(parseColour(prefix) + " " + parseColour(usernamecolour)+ args[1] + " " + parseColour(message));
 		
@@ -54,11 +54,11 @@ public class BuycraftAnnouncer extends JavaPlugin {
 	    }
 	}else if (cmd.getName().equalsIgnoreCase("buycraftannouncer")) {
 	    if (args.length < 1) {
-	    sender.sendMessage(RED + "BuycraftAnnouncer version " + pdfFile.getVersion() + " by Zachoz" );
+	    sender.sendMessage(RED + "BuycraftAnnouncer version " + pdfFile.getVersion());
 	} 
 	    else if (args[0].equalsIgnoreCase("reload")) {
 		  this.reloadConfig();
-		  sender.sendMessage(ChatColor.GREEN + "Configuration reloaded.");
+		  sender.sendMessage(ChatColor.GREEN + "Config reloaded.");
 	    }
 		    return true;
 	}
@@ -86,7 +86,7 @@ public class BuycraftAnnouncer extends JavaPlugin {
 	message = message.replaceAll("&e", ChatColor.YELLOW + "");
 	message = message.replaceAll("&f", ChatColor.WHITE + "");
 	message = message.replaceAll("&k", ChatColor.MAGIC + "");
-	message = message.replaceAll("&m", ChatColor.MAGIC + "");
+	message = message.replaceAll("&m", ChatColor.STRIKETHROUGH + "");
 	message = message.replaceAll("&i", ChatColor.ITALIC + "");
 	message = message.replaceAll("&u", ChatColor.UNDERLINE + "");
 	message = message.replaceAll("&h", ChatColor.BOLD + "");
